@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="fa" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style/style.css" />
+    <!-- <link rel="stylesheet" href="./style/normalize.css" /> -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+    <title>سامانه مدیریت وظایف</title>
+  </head>
+  <body>
+    <h1>سامانه مدیریت وظایف</h1>
+    <h3>اطلاعیه ها</h3>
+    <p id="notifications"></p>
+    <button id="send-message">دریافت اطلاعات</button>
+    <div class="form-container">
+      <section class="add-task-section">
+        <h3>اضافه کردن وظیفه</h3>
+        <div>
+          <form action="" class="add-task-form" id="task-form">
+            <label for="title">عنوان:</label>
+            <input type="text" id="title" name="title" required />
+
+            <label for="description">توضیحات:</label>
+            <textarea id="description" name="description" required></textarea>
+
+            <button type="submit" class="add-task-btn">افزودن وظیفه</button>
+          </form>
+        </div>
+      </section>
+      <section class="edit-task-section hide">
+        <h3>ویرایش وظیفه</h3>
+        <div>
+          <form action="" class="edit-task-form" id="edit-task-form">
+            <input type="hidden" id="id-edit" name="id-edit" />
+            <label for="edit-title">عنوان:</label>
+            <input type="text" id="edit-title" name="edit-title" required />
+
+            <label for="edit-desc">توضیحات:</label>
+            <textarea id="edit-desc" name="edit-desc" required></textarea>
+
+            <button type="submit" class="add-task-btn">ویرایش وظیفه</button>
+          </form>
+        </div>
+      </section>
+    </div>
+    <section class="table-section">
+      <h2>وظایف</h2>
+      <input type="text" id="search" placeholder="جستجو..." />
+      <table class="tasks-table" id="task-table">
+        <thead>
+          <tr>
+            <th>ردیف</th>
+            <th>عنوان</th>
+            <th>توضیحات</th>
+            <th>وضعیت</th>
+            <th>عملیات</th>
+          </tr>
+        </thead>
+        <tbody id="task-list"></tbody>
+      </table>
+    </section>
+    <script src="./index.js" defer></script>
+    <script src="./learn2.js" defer></script>
+  </body>
+</html>

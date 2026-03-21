@@ -1,0 +1,90 @@
+@font-face {
+  font-family: "Vazir";
+  src: url("../fonts/Vazirmatn-VariableFont_wght.ttf") format("truetype");
+}
+
+body {
+  font-family: "Vazir", "Times New Roman", Times, serif;
+}
+
+input,
+textarea {
+  padding: 10px;
+  font-size: 16px;
+}
+
+/* add task section */
+
+.add-task-section,
+.edit-task-section {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  width: 300px;
+  padding: 20px;
+  margin: 20px;
+  position: absolute;
+  top: 0;
+  right: 0;
+  transition: opacity 0.5s ease;
+}
+
+.add-task-form,
+.edit-task-form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.hide {
+  opacity: 0;
+  pointer-events: none;
+}
+.form-container {
+  position: relative;
+  height: 400px;
+  min-height: 300px;
+  margin-bottom: 20px;
+}
+
+.add-task-btn {
+  padding: 10px;
+  font-size: 16px;
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  cursor: pointer;
+  margin: 10px 0;
+}
+.add-task label {
+  font-size: 18px;
+
+  margin-top: 10px;
+}
+
+.table-section {
+  margin-top: 20px;
+}
+
+table {
+  width: 60%;
+  margin-top: 20px;
+  border-collapse: collapse;
+  border: black solid 1px;
+  border-radius: 10px;
+}
+th,
+td {
+  border: black solid 1px;
+  padding: 10px;
+}
+
+i {
+  cursor: pointer;
+}
+
+td:first-child,
+th:first-child {
+  width: 40px;
+  text-align: center;
+}
