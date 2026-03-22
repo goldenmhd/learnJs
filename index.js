@@ -6,16 +6,16 @@ const addSection = document.querySelector(".add-task-section");
 let title = document.getElementById("title");
 let desc = document.getElementById("description");
 
-let userName = localStorage.getItem("userName");
+// let userName = localStorage.getItem("userName");
 
-while (userName === "" || userName === null) {
-  userName = prompt("اسمت چیه آقا پسر؟");
-  if (userName === "" || userName == null) {
-    alert("به نظرم باید خودتو معرفی کنی");
-  }
-}
-localStorage.setItem("userName", userName);
-alert("خیلی خوش آمدید " + userName + " آقای عزیز");
+// while (userName === "" || userName === null) {
+//   userName = prompt("اسمت چیه آقا پسر؟");
+//   if (userName === "" || userName == null) {
+//     alert("به نظرم باید خودتو معرفی کنی");
+//   }
+// }
+// localStorage.setItem("userName", userName);
+// alert("خیلی خوش آمدید " + userName + " آقای عزیز");
 
 fetch("https://jsonplaceholder.typicode.com/todos/1")
   .then((response) => response.json())
